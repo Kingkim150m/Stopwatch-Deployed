@@ -1,0 +1,144 @@
+/* styles.css */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+    contenteditable: true;
+}
+
+.main-timer {
+    font-size: 5em;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid red;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#start-stop {
+    background-color: red;
+}
+
+#lap-reset {
+    background-color: grey;
+}
+
+#add-stopwatch {
+    background-color: blue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#back-button, #next-button {
+    background-color: blue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.laps {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.lap {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.lap-comment {
+    margin-left: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 1em;
+}
+
+.dot-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: white;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Media query for Samsung Galaxy Note 10 Lite (6.7" screen, 2400 x 1080 px) */
+@media (max-width: 2400px) and (max-height: 1080px) {
+    .main-timer {
+        font-size: 4em; /* Reduce font size by 20% */
+    }
+
+    .button {
+        width: 64px; /* Reduce size by 20% */
+        height: 64px; /* Reduce size by 20% */
+        font-size: 1em; /* Reduce font size by 20% */
+    }
+
+    .lap-comment {
+        font-size: 0.8em; /* Reduce font size by 20% */
+    }
+
+    h1, h2 {
+        font-size: 0.8em; /* Reduce font size by 20% */
+    }
+
+    .lap {
+        font-size: 0.8em; /* Reduce font size by 20% */
+    }
+
+    #back-button, #next-button, #add-stopwatch {
+        width: 64px; /* Reduce size by 20% */
+        height: 64px; /* Reduce size by 20% */
+    }
+}

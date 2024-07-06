@@ -1,0 +1,31 @@
+{
+    "name": "KIM Stopwatch",
+    "short_name": "KIM",
+    "description": "A simple stopwatch application",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "black",
+    "theme_color": "grey",
+    "icons": [
+        {
+            "src": "icono.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icons/icon-256x256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "icons/icon-384x384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "icono.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
