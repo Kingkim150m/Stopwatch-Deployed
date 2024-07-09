@@ -223,11 +223,11 @@ function createStopwatch(index) {
     const stopwatch = document.createElement('div');
     stopwatch.className = 'stopwatch';
     stopwatch.innerHTML = `
-        <h2 contenteditable="true">Stopwatch number ${index + 1}</h2>
+        <h2 contenteditable="true"> Click aqui para cambiar el STOPWATCH # ${index + 1}</h2>
         <div class="main-timer">00:00.00</div>
         <div class="buttons">
             <button class="lap-reset button">Lap</button>
-            <button class="start-stop button">Stop</button>
+            <button class="start-stop button">Start</button>
         </div>
         <div class="laps"></div>
     `;
@@ -267,6 +267,10 @@ function createStopwatch(index) {
         startStopButton.style.backgroundColor = 'red';
         lapResetButton.textContent = 'Lap';
         lapResetButton.style.backgroundColor = 'grey';
+
+        lapResetButton.style.width = '65px'; // Set the width to 65 pixels
+        lapResetButton.style.height = '65px'; // Set the height to 65 pixels
+        lapResetButton.style.fontSize = '16px'; // Set font size to 14 pixels
     }
 
     function stopTimer() {
@@ -276,7 +280,11 @@ function createStopwatch(index) {
         startStopButton.textContent = 'Start';
         startStopButton.style.backgroundColor = 'green';
         lapResetButton.textContent = 'Reset';
-        lapResetButton.style.backgroundColor = 'grey';
+        lapResetButton.style.color = 'black';
+        lapResetButton.style.backgroundColor = 'yellow';
+        lapResetButton.style.width = '45px'; // Set the width to 60 pixels
+        lapResetButton.style.height = '35px'; // Set the height to 35 pixels
+        lapResetButton.style.fontSize = '10px'; // Set font size to 14 pixels
     }
 
     function resetTimer() {
