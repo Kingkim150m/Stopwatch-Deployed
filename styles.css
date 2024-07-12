@@ -96,7 +96,10 @@ h2 {
 .lap {
     display: flex;
     justify-content: space-between;
-    padding: 5px 0;
+    padding: 5px 10px 5px 10px;
+    background-color: grey;
+    width: 700px;
+
 }
 
 .lap-comment {
@@ -106,7 +109,16 @@ h2 {
     border: none;
     border-bottom: 1px solid white;
     font-size: 1em;
+
 }
+
+input {
+    width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
 
 .dot-navigation {
     display: flex;
@@ -146,7 +158,7 @@ h2 {
     }
 
     .lap-comment {
-        font-size: 0.8em; /* Reduce font size by 20% */
+        font-size: 0.7em; /* Reduce font size by 30% */
     }
 
     h1, h2 {
@@ -154,7 +166,8 @@ h2 {
     }
 
     .lap {
-        font-size: 0.8em; /* Reduce font size by 20% */
+        font-size: 0.7em; /* Reduce font size by 30% */
+        width: 80%;
     }
 
     #back-button, #next-button, #add-stopwatch {
