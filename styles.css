@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    touch-action: manipulation; /* Prevent zoom on mobile devices */
 }
 
 .container {
@@ -98,7 +99,7 @@ h2 {
     justify-content: space-between;
     padding: 5px 10px 5px 10px;
     background-color: grey;
-    width: 700px;
+    width: 1200px;
 
 }
 
@@ -167,7 +168,7 @@ input {
 
     .lap {
         font-size: 0.7em; /* Reduce font size by 30% */
-        width: 80%;
+        width: 100%;
     }
 
     #back-button, #next-button, #add-stopwatch {
