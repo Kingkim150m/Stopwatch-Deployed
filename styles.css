@@ -13,6 +13,8 @@ body {
 
 .container {
     text-align: center;
+    background-color: aqua;
+    width: 90%;
 }
 
 h1 {
@@ -91,7 +93,11 @@ h2 {
 
 .laps {
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.2em;
+    width: 90%;
+    background-color: aquamarine;
 }
 
 .lap {
@@ -99,7 +105,7 @@ h2 {
     justify-content: space-between;
     padding: 5px 10px 5px 10px;
     background-color: grey;
-    width: 1800px;
+    width: 90%;
 
 }
 
@@ -114,7 +120,7 @@ h2 {
 }
 
 input {
-    width: 45%;
+    width: 55%;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
@@ -167,7 +173,7 @@ input {
     }
 
     .lap {
-        font-size: 0.7em; /* Reduce font size by 30% */
+        font-size: 0.6em; /* Reduce font size by 40% */
         width: 95%;
     }
 
