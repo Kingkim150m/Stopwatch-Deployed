@@ -126,12 +126,13 @@ function createStopwatch(index) {
     }
 
     function formatTime(time) {
-        const milliseconds = Math.floor((time % 1000) / 10);
+        // const milliseconds = Math.floor((time % 1000) / 10); removes milliseconds
         const seconds = Math.floor((time / 1000) % 60);
         const minutes = Math.floor((time / (1000 * 60)) % 60);
         const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
 
-        return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}.${pad(milliseconds)}`;
+        //return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}.${pad(milliseconds)}`;
+        return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
     }
 
     function pad(number) {
