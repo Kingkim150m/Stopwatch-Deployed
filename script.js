@@ -1,3 +1,44 @@
+//firebase
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAtFMzOwGWjtG_ECvB1ZeUDsGk_bPD9xW0",
+    authDomain: "alvaro-kim-clock.firebaseapp.com",
+    databaseURL: "https://alvaro-kim-clock-default-rtdb.firebaseio.com",
+    projectId: "alvaro-kim-clock",
+    storageBucket: "alvaro-kim-clock.appspot.com",
+    messagingSenderId: "132997193466",
+    appId: "1:132997193466:web:5eb661cb8549ce4973b343"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+//hasta aqui termina los de firebase 
+
+//esto lo estoy sacando de un tutorial llamado Connect Firebase Database to Html Form using JavaScript | How To Save Data In Firebase JavaScript
+//get ref to database services
+const b = getDatabase (app)
+
+
+document.getElementById ("submit").addEventListener('click', function (e){
+set(ref(db, 'user/' + document.getElementById("username").value),
+{
+  username: document.getElementById("username").value
+
+});
+   alert("Login Sucessfull !");
+})
+
+
+
+
+
 // script.js
 
 // Array to store the stopwatch instances
